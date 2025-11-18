@@ -95,6 +95,14 @@ export async function GET(request) {
     const whereClause =
       conditions.length > 0 ? `WHERE ${conditions.join(" AND ")}` : "";
 
+    // TODO: REFACTOR - Before Launch
+    // This query mixes string concatenation with parameterized queries.
+    // While params are still safely parameterized, the pattern is fragile.
+    // Recommended approach:
+    // 1. Use a query builder (e.g., Drizzle ORM)
+    // 2. Or build the query using Neon's tagged templates consistently
+    // 3. Or use a WHERE builder function that maintains parameterization
+    // See: CODE_REVIEW_RECOMMENDATIONS.md #2 for details
     const query = `
       SELECT u.id, u.name, u.email, u.phone_number, u.image,
              wp.bio, wp.experience_years, wp.hourly_rate, wp.service_areas, 
