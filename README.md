@@ -1,5 +1,6 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)n
+[![CI](https://github.com/GunnarMUC/dogwalking-marketplace/actions/workflows/ci.yml/badge.svg)](https://github.com/GunnarMUC/dogwalking-marketplace/actions)
 
 # 🐕 DogWalking Marketplace Platform
 
