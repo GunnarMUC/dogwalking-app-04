@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)n
+
 # 🐕 DogWalking Marketplace Platform
 
 A full-stack marketplace platform connecting pet owners with professional dog walkers. Built with modern web and mobile technologies for a seamless experience across all devices.
